@@ -3,9 +3,6 @@
 fileName="strings.txt"
 
 def checkString(inString):
-    strDict = {}
-    firstDupe = None
-
     print("String: ",inString)
     for pos in range(0, len(inString)):
         chkChar = inString[pos]
