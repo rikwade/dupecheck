@@ -6,6 +6,9 @@ def checkString(inString):
     for pos in range(0, len(inString)):
         chkChar = inString[pos]
         result = 0
+        # str.find returns the lowest index in the string where the substring
+        # is found. We start searching from the current position+1
+        # it returns the position in the string (index counting from 0)
         result = inString.find(chkChar, pos+1)
         if(result>0):
             return(pos,chkChar)
