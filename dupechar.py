@@ -3,7 +3,6 @@
 fileName="strings.txt"
 
 def checkString(inString):
-    print("String:",inString)
     for pos in range(0, len(inString)):
         chkChar = inString[pos]
         result = 0
@@ -20,5 +19,9 @@ myStrings = [x.strip() for x in myStrings]
 for tstString in myStrings:
     position = None
     (position, dupeChar) = checkString(tstString)
+
+    print("String:",tstString)
     if (position != None):
         print("Character:",dupeChar,"Position:",position+1)
+    else:
+        print("No duplicate characters")
